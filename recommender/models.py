@@ -7,7 +7,7 @@ class User(models.Model):
     mov = models.ForeignKey('Movie', on_delete=models.PROTECT, null=True)
 
     class Meta:
-        ordering = ['created']
+        ordering = ['time_create']
 
 
 class Movie(models.Model):
